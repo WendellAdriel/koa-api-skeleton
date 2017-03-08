@@ -1,4 +1,3 @@
-import 'babel-polyfill'
 import server from '~/server'
 import supertest from 'supertest'
 

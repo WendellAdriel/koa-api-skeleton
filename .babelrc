@@ -1,15 +1,17 @@
 {
   "presets": [
     "es2015",
-    "stage-3"
   ],
   "code": true,
   "plugins": [
-    ["module-resolver", {
-      "root": ["./src"],
-      "alias": {
-        "~": "./src"
-      }
-    }]
+    [
+      "module-resolver", {
+        "root": ["./src"],
+        "alias": {
+          "~": "./src"
+        }
+      },
+      "transform-async-to-generator"
+    ]
   ]
 }
