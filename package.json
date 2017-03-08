@@ -1,0 +1,44 @@
+{
+  "name": "koa-api-skeleton",
+  "version": "1.0.0",
+  "description": "Awesome KoaJS boilerplate to create APIs using a DDD based architecture",
+  "main": "app.js",
+  "repository": "https://github.com/WendellAdriel/koa-api-skeleton",
+  "author": "Wendell Adriel <wendelladriel.ti@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production babel src --out-dir dist",
+    "serve": "cross-env NODE_ENV=production node dist/server.js",
+    "serve:dev": "cross-env NODE_ENV=development nodemon app.js",
+    "lint": "eslint src/ test/",
+    "lint-watch": "esw -w --color src/ test/",
+    "test": "cross-env NODE_ENV=test mocha --compilers js:babel-register --recursive",
+    "test:watch": "yarn test -- --watch"
+  },
+  "dependencies": {
+    "kcors": "^1.3.2",
+    "koa": "^2.1.0",
+    "koa-bodyparser": "^4.1.0",
+    "koa-logger": "^2.0.1",
+    "koa-router": "next"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-module-resolver": "^2.5.0",
+    "babel-preset-stage-3": "^6.22.0",
+    "babel-register": "^6.23.0",
+    "cross-env": "^3.2.3",
+    "eslint": "^3.17.1",
+    "eslint-config-standard": "^7.0.1",
+    "eslint-import-resolver-babel-module": "^3.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
+    "eslint-watch": "^3.0.1",
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
+  }
+}

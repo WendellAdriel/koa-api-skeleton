@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "stage-3"
+  ],
+  "code": true,
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "~": "./src"
+      }
+    }]
+  ]
+}
