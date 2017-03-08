@@ -1,10 +1,10 @@
 import Koa from 'koa'
-const app = new Koa()
+const server = new Koa()
 
-app.use(async ctx => {
+server.use(async ctx => {
   ctx.body = 'Hello World'
 })
 
-app.listen(3000, () => console.log('Koa server started at port 3000'))
+server.listen(3000, () => console.log('Koa server started at port 3000'))
 
-export default app
+export default server
