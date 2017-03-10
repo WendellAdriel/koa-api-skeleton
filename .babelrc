@@ -9,7 +9,12 @@
       "module-resolver", {
         "root": ["./src"],
         "alias": {
-          "~": "./src"
+          "~": "./src",
+          "config": "./src/config",
+          "core": "./src/core",
+          "domains": "./src/domains",
+          "modules": "./src/modules",
+          "support": "./src/support"
         }
       },
     ],

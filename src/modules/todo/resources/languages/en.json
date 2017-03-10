@@ -1,0 +1,7 @@
+{
+  "list.success": "SHOW TODO LIST",
+  "create.success": "TODO CREATED SUCCESSFULLY",
+  "show.success": "TODO #{{id}} SHOW",
+  "update.success": "TODO #{{id}} UPDATED",
+  "delete.success": "TODO #{{id}} DELETED"
+}

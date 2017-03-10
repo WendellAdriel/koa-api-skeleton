@@ -1,0 +1,7 @@
+{
+  "list.success": "MOSTRAR LISTA DE TODOS",
+  "create.success": "TODO CRIADO COM SUCESSO",
+  "show.success": "MOSTRAR TODO #{{id}}",
+  "update.success": "TODO #{{id}} ATUALIZADO",
+  "delete.success": "TODO #{{id}} DELETADO"
+}
