@@ -11,7 +11,7 @@
     "serve": "cross-env NODE_ENV=production node dist/server.js",
     "serve:dev": "cross-env NODE_ENV=development nodemon app.js",
     "lint": "eslint src/ test/",
-    "lint-watch": "esw -w --color src/ test/",
+    "lint:watch": "esw -w --color src/ test/",
     "test": "cross-env NODE_ENV=test mocha --compilers js:babel-register --recursive",
     "test:watch": "yarn test -- --watch"
   },
