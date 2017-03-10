@@ -1,10 +1,17 @@
 import Koa from 'koa'
+import cors from 'kcors'
+import logger from 'koa-logger'
+
+import config from '~/config/config'
+import api from '~/config/routes'
+
 const server = new Koa()
 
-server.use(async ctx => {
-  ctx.body = 'Hello World'
-})
+server.use(logger())
+server.use(cors())
+server.use(api.routes())
+server.use(api.allowedMethods())
 
-server.listen(3000, () => console.log('Koa server started at port 3000'))
+server.listen(config.env.port, () => console.log(`Koa server started at port ${config.env.port}`))
 
 export default server

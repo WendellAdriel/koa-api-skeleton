@@ -1936,6 +1936,16 @@ jsesc@~0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
 
+json-path@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/json-path/-/json-path-0.1.3.tgz#dce61357b3b281b28ac647ec0a709bc58a155bf8"
+  dependencies:
+    json-ptr "~0.1.1"
+
+json-ptr@~0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/json-ptr/-/json-ptr-0.1.1.tgz#bab82a31e292ce7af9e3fc7fd65acd1bbb9248e8"
+
 json-schema@0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/json-schema/-/json-schema-0.2.3.tgz#b480c892e59a2f05954ce727bd3f2a4e882f9e13"
@@ -2036,6 +2046,13 @@ koa-router@next:
     koa-compose "^3.0.0"
     methods "^1.0.1"
     path-to-regexp "^1.1.1"
+
+koa-validate@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/koa-validate/-/koa-validate-1.0.7.tgz#0b7dd3feee83cae1b4694fa06376477d945eb430"
+  dependencies:
+    json-path "^0.1.3"
+    validator "^5.2.0"
 
 koa@^2.1.0:
   version "2.1.0"
@@ -3137,6 +3154,10 @@ v8flags@^2.0.10:
   resolved "https://registry.yarnpkg.com/v8flags/-/v8flags-2.0.11.tgz#bca8f30f0d6d60612cc2c00641e6962d42ae6881"
   dependencies:
     user-home "^1.1.1"
+
+validator@^5.2.0:
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-5.7.0.tgz#7a87a58146b695ac486071141c0c49d67da05e5c"
 
 vary@^1.0.0:
   version "1.1.0"
