@@ -3,13 +3,13 @@ import Router from 'koa-router'
 /**
  * Import Modules routes
  */
-import todoModule from 'modules/todo/controllers'
+import { todoRoutes } from 'modules/todo'
 
 /**
  * Register application routes
  */
 const api = new Router()
 
-api.use('/todos', todoModule.routes())
+api.use('/todos', todoRoutes.routes())
 
 export default api

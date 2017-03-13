@@ -3,9 +3,9 @@ import Router from 'koa-router'
 import translation from 'core/translation'
 
 const trans = translation(__dirname)
-const todoModule = new Router()
+const todoRoutes = new Router()
 
-todoModule
+todoRoutes
   .get('/', async (ctx, next) => {
     ctx.body = { message: trans('list.success') }
   })
@@ -26,4 +26,4 @@ todoModule
     ctx.body = { message: trans('delete.success', { id: ctx.params.id }) }
   })
 
-export default todoModule
+export default todoRoutes
