@@ -3,8 +3,7 @@ import cors from 'kcors'
 import logger from 'koa-logger'
 import bodyParser from 'koa-bodyparser'
 
-import config from 'config/config'
-import api from 'config/routes'
+import { config, api } from 'config'
 
 const server = new Koa()
 

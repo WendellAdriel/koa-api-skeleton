@@ -3,7 +3,7 @@ import Router from 'koa-router'
 /**
  * Import Modules routes
  */
-import todoModule from 'modules/todo/controllers/todo-controller'
+import todoModule from 'modules/todo/controllers'
 
 /**
  * Register application routes

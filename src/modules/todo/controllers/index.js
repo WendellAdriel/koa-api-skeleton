@@ -1,6 +1,6 @@
 import Router from 'koa-router'
 
-import translation from 'core/translation/translation'
+import translation from 'core/translation'
 
 const trans = translation(__dirname)
 const todoModule = new Router()
